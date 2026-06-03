@@ -7,6 +7,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-label *ngIf="!listaFilmes">Filme não encontrado</ion-label>
+
   <ion-list *ngIf="listaFilmes">
 
     <ion-item-sliding *ngFor="let filme of listaFilmes">
