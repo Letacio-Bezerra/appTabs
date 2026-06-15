@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: 'filme-detalhe',
     loadChildren: () => import('./filme-detalhe/filme-detalhe.module').then( m => m.FilmeDetalhePageModule)
+  },
+  {
+    path: 'serie-detalhe',
+    loadChildren: () => import('./serie-detalhe/serie-detalhe.module').then( m => m.SerieDetalhePageModule)
+  },
+  {
+    path: 'ator-detalhe',
+    loadChildren: () => import('./ator-detalhe/ator-detalhe.module').then( m => m.AtorDetalhePageModule)
   }
 ];
 @NgModule({
