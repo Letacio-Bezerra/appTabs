@@ -22,3 +22,4 @@ export class FilmeDetalhePage implements OnInit {
     });
   }
 }
+
